@@ -2,8 +2,7 @@ import mysql.connector
 mydb=mysql.connector.connect(host='localhost',user='root',password='Myselfs@1',database='Inventory_Management')
 cur=mydb.cursor()
  
-
-# Create the 'manufacture' table
+ # Create the 'manufacture' table
 cur.execute('CREATE TABLE manufacture (manufacture_id INTEGER PRIMARY KEY, item_name VARCHAR(20),company varchar(20),item_color VARCHAR(20),quantity INTEGER(4),defective_items INTEGER(4))')
 
 # Create the 'goods' table
